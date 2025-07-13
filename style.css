@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #fdf6f0;
+  background: #fff9f5;
   color: #333;
   text-align: center;
   margin: 0;
@@ -9,7 +9,7 @@ body {
 
 .container {
   padding: 40px 20px;
-  max-width: 600px;
+  max-width: 700px;
   margin: auto;
 }
 
@@ -21,8 +21,14 @@ body {
 
 .couple {
   font-size: 2.5em;
-  margin: 10px 0;
   color: #b22222;
+}
+
+.invitee {
+  font-size: 1.1em;
+  margin: 10px 0;
+  font-style: italic;
+  color: #666;
 }
 
 .date, .location {
@@ -30,8 +36,15 @@ body {
   margin: 5px 0;
 }
 
+.countdown {
+  font-size: 1.4em;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #cc3366;
+}
+
 .buttons {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .btn {
@@ -49,8 +62,22 @@ body {
   background: #a52a4d;
 }
 
+.gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
 .footer {
-  margin-top: 40px;
+  margin-top: 30px;
   font-style: italic;
   color: #666;
 }
