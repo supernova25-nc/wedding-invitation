@@ -1,18 +1,21 @@
+/* Reset dasar */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #fff9f5;
+  background: #fff8f2;
   color: #333;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
+/* Container utama */
 .container {
   padding: 40px 20px;
   max-width: 700px;
   margin: auto;
 }
 
+/* Judul & Nama Pengantin */
 .title {
   font-size: 2em;
   margin-bottom: 10px;
@@ -22,6 +25,7 @@ body {
 .couple {
   font-size: 2.5em;
   color: #b22222;
+  margin-bottom: 10px;
 }
 
 .invitee {
@@ -31,11 +35,13 @@ body {
   color: #666;
 }
 
+/* Tanggal & Lokasi */
 .date, .location {
   font-size: 1.2em;
   margin: 5px 0;
 }
 
+/* Countdown */
 .countdown {
   font-size: 1.4em;
   margin: 20px 0;
@@ -43,6 +49,7 @@ body {
   color: #cc3366;
 }
 
+/* Tombol */
 .buttons {
   margin-top: 20px;
 }
@@ -62,6 +69,7 @@ body {
   background: #a52a4d;
 }
 
+/* Galeri Foto */
 .gallery {
   display: flex;
   gap: 10px;
@@ -76,8 +84,16 @@ body {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
+/* Footer */
 .footer {
   margin-top: 30px;
   font-style: italic;
   color: #666;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+  .gallery img {
+    width: 80%;
+  }
 }
