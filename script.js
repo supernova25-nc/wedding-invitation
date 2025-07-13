@@ -1,4 +1,4 @@
-// Ambil parameter dari URL: ?to=Nama+Tamu
+// Ambil parameter nama tamu dari URL (?to=NamaTamu)
 const params = new URLSearchParams(window.location.search);
 const namaTamu = params.get("to");
 
@@ -6,8 +6,8 @@ if (namaTamu) {
   document.getElementById("inviteeName").textContent = `Untuk: ${decodeURIComponent(namaTamu)}`;
 }
 
-// Countdown timer
-const targetDate = new Date("2025-08-25T09:00:00+07:00").getTime();
+// Countdown menuju 4 Desember 2025 pukul 09.00 WIB
+const targetDate = new Date("2025-12-04T09:00:00+07:00").getTime();
 const countdownElement = document.getElementById("countdown");
 
 function updateCountdown() {
@@ -24,7 +24,8 @@ function updateCountdown() {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  countdownElement.textContent = `Menuju Hari Bahagia: ${days}h ${hours}j ${minutes}m ${seconds}d`;
+  countdownElement.textContent =
+    `Menuju Hari Bahagia: ${days}h ${hours}j ${minutes}m ${seconds}d`;
 }
 
 setInterval(updateCountdown, 1000);
