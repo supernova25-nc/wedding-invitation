@@ -7,16 +7,34 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <audio autoplay loop hidden>
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
   <div class="container">
     <h1 class="title">Undangan Pernikahan</h1>
-    <h2 class="couple">Galih & Dian</h2>
-    <p class="date">Kamis, 4 Desember 2025</p>
-    <p class="location">Kediaman Bapak Hadi, Gresik</p>
+    <h2 class="couple">Rina & Dika</h2>
+    <p class="invitee" id="inviteeName"></p>
+
+    <p class="date">Minggu, 25 Agustus 2025</p>
+    <p class="location">Gedung Serbaguna Melati, Jakarta</p>
+
+    <div id="countdown" class="countdown"></div>
 
     <div class="buttons">
       <a href="https://maps.google.com/?q=Gedung+Serbaguna+Melati" target="_blank" class="btn">Lihat Lokasi</a>
       <a href="https://wa.me/6281234567890?text=Saya+akan+hadir+di+acara+pernikahan+Rina+%26+Dika" target="_blank" class="btn">Konfirmasi Kehadiran</a>
     </div>
+
+    <h3>Galeri Kenangan</h3>
+    <div class="gallery">
+      <img src="images/foto1.jpg" alt="Foto 1" />
+      <img src="images/foto2.jpg" alt="Foto 2" />
+      <img src="images/foto3.jpg" alt="Foto 3" />
+    </div>
+
+    <h3>Buku Tamu</h3>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXXX-YOUR-FORM-ID/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
 
     <p class="footer">Kami menantikan kehadiran dan doa restu Anda ❤️</p>
   </div>
